@@ -1,0 +1,125 @@
+//МИКСИНЫ
+@mixin for-phone {
+    @media (max-width: 479.98px) { @content; }
+  }
+  @mixin for-tablet {
+    @media (max-width: 767.98px) { @content; }
+  }
+  @mixin for-laptop {
+    @media (max-width: 991.98px) { @content; }
+  }
+  @mixin for-desktop-up {
+    @media (max-width: 1920px) { @content; }
+  }
+//МИКСИНЫ
+
+
+//ШРИФТЫ
+
+//ПОДКЛЮЧАЕМ ШРИФТЫ
+@import 'fonts';
+//ПОДКЛЮЧАЕМ ШРИФТЫ
+
+//ШРИФТ ПО УМОЛЧАНИЮ
+$fontfamily: "HelveticaNeue";
+//ШРИФТ ПО УМОЛЧАНИЮ
+
+//ШРИФТЫ
+
+
+//ПЕРЕМЕННЫЕ
+$primaryColor: #fff;
+$bgdarkColor: #373A3C;
+$greenColor: #8DD83D;
+$textDarkColor: #435766;
+//ПЕРЕМЕННЫЕ
+
+//ОБНУЛЕНИЕ
+@import 'reset';
+//ОБНУЛЕНИЕ
+
+//ПОДКЛЮЧЕНИЕ СТРАНИЦ
+@import 'header';
+@import 'footer';
+//ПОДКЛЮЧЕНИЕ СТРАНИЦ
+
+//ОБЩИЕ СТИЛИ
+body {
+  color: $primaryColor;
+  font-family: $fontfamily;
+
+  &.lock {
+    overflow: hidden;
+  }
+}
+
+
+//ОБЩИЕ СТИЛИ
+
+//ОБОЛОЧКА
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+}
+//ОБОЛОЧКА
+
+
+//ОСНОВНАЯ СЕТКА
+.container {
+    max-width: 1100px;
+
+    margin: 0 auto;
+    padding: 0 15px;
+
+    //@include for-desktop-up {
+    //  max-width: 970px;
+    //}
+//
+    //@include for-laptop {
+    //  max-width: 760px
+    //}
+//
+    //@include for-tablet {
+    //  max-width: none;
+    //}
+//
+    //@include for-phone {
+//
+    //}
+}
+
+.container-2 {
+  max-width: 882px;
+
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container-3 {
+  max-width: 1230px;
+
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container-4 {
+  max-width: 1430px;
+
+  margin: 0 auto;
+  
+}
+
+//ОСНОВНАЯ СЕТКА
+
+//ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ 
+@import 'forms';
+//ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ 
+
+
+//ОСНОВНОЙ БЛОК
+@import 'mainblock';
+@import 'best';
+@import 'design';
+@import 'exclusive';
+//ОСНОВНОЙ БЛОК

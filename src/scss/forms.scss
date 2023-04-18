@@ -1,0 +1,62 @@
+//Кнопки
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 3px;
+    
+    text-align: center;
+    font-size: 16px;
+    line-height: 21px;
+  
+    color: $primaryColor;
+
+    &--green {
+        background-color: $greenColor;
+        transition: all 0.3s ease 0s;
+
+        &:hover {
+            background-color: #507a23;
+            transform: translate(0px, 2px);
+        }
+    }
+
+    &--gray {
+        background: linear-gradient(180deg, #686C6F 0%, #373A3C 100%);
+        transition: all 0.3s ease 0s;
+        
+        &:hover {
+            background: linear-gradient(180deg, #4a4a4e 0%, #282e31 100%);
+            transform: translate(0px, 2px);
+        }
+    }
+  }
+
+//Стрелочки выпадающего меню
+.arrow {
+    cursor: pointer;
+
+    position: absolute;
+    right: -20px;
+    bottom: -5px;
+
+    width: 12px;
+    height: 16px;
+     
+    background-image: url(../img/icons/arrow.svg);
+    background-repeat: no-repeat;
+
+    transition: all 0.2s ease 0s;
+
+    &.open {
+        transform: rotate(-180deg);
+        bottom: 5px;
+    }
+}
+
+//Заголовки
+.footer-title {
+    font-size: 18px;
+    color: $greenColor;
+}

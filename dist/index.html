@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230418200400">
+    <title>Главная</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+    <div class="container">
+        <div class="header__content">
+            <a class="header__logo" href="#"><img src="img/header/logo.svg" alt="XBOX"></a>
+            <nav class="header__nav">
+                <div class="header__menu menu">
+                    <div class="menu__icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="menu__body">
+                        <ul class="menu__list">
+                            <li class="menu__item menu__dropdown">
+                                <a class="menu__link" href="#">Games</a>
+                                <span class="menu__arrow arrow"></span>
+                                <ul class="sub-menu__list">
+                                    <li class="sub-menu__item">
+                                        <a class="sub-menu__link" href="#" >Games-2</a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a class="sub-menu__link" href="#" >Lorem ipsum dolor sit amet.</a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a class="sub-menu__link" href="#" >Lorem ipsum dolor.</a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a class="sub-menu__link" href="#" >Lorem ipsum dolor sit.</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu__item menu__dropdown">
+                                <a class="menu__link" href="#">Consoles</a>
+                                <span class="menu__arrow arrow"></span>
+                                <ul class="sub-menu__list">
+                                    <li class="sub-menu__item">
+                                        <a class="sub-menu__link" href="#" >Consoles-2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">Community</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header__search">
+                    <input class="header__search-input" type="text" placeholder="Search">
+                    <div class="header__search-loupe"><img src="img/icons/loupe.svg" alt="search loupe"></div>
+                </div>
+                <div class="header__user menu__dropdown">
+                    <a class="header__user-icon" href="#"></a>
+                    <a class="header__user-text" href="#">My XBOX</a>
+                    <span class="header__user-arrow arrow"></span>
+                    <ul class="sub-menu__list">
+                        <li class="sub-menu__item">
+                            <a class="sub-menu__link" href="#" >Lorem ipsum dolor.</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+        <main class="main">
+            <section class="mainblock">
+    <div class="mainblock__slider">
+        <div class="mainblock__slider-item mainblock__slider-item--SW">
+            <div class="mainblock__slider-content">
+                <div class="mainblock__slider-title"><span>Star Wars</span> <br/>Battlefront II</div>
+                <div class="mainblock__buttons">
+                    <a class="mainblock__btn-watch  btn btn--green" href="#">Watch Trailer</a>
+                    <a class="mainblock__btn-explore btn btn--gray" href="#">Explore Games</a>
+                </div>
+            </div>
+        </div>
+        <div class="mainblock__slider-item mainblock__slider-item--CoW">
+            <div class="mainblock__slider-content">
+                <div class="mainblock__slider-title"><span>Call of Duty:</span> <br/>WWII</div>
+                <div class="mainblock__buttons">
+                    <a class="mainblock__btn-watch  btn btn--green" href="#">Watch Trailer</a>
+                    <a class="mainblock__btn-explore btn btn--gray" href="#">Explore Games</a>
+                </div>
+            </div>
+        </div>
+        <div class="mainblock__slider-item mainblock__slider-item--DE">
+            <div class="mainblock__slider-content">
+                <div class="mainblock__slider-title"><span>Max Payne 3</span> <br/></div>
+                <div class="mainblock__buttons">
+                    <a class="mainblock__btn-watch  btn btn--green" href="#">Watch Trailer</a>
+                    <a class="mainblock__btn-explore btn btn--gray" href="#">Explore Games</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="mainblock__button-left"><img src="img/icons/arrow-left.svg" alt=""></button>
+    <button class="mainblock__button-right"><img src="img/icons/arrow-right.svg" alt=""></button>
+    <div class="mainblock__tabs">
+        <div class="mainblock__tabs-item active"></div>
+        <div class="mainblock__tabs-item"></div>
+        <div class="mainblock__tabs-item"></div>
+    </div>
+</section>
+            <section class="design">
+    <div class="container">
+        <div class="design__content">
+            <div class="design__body">
+                <div class="design__title">Xbox Design Lab</div>
+                <div class="design__text">Make yours one in a billion with new colors, <br/> metallic finishes and rubberized grips.</div>
+                <div class="design__buttons">
+                    <a class="design__btn-first btn btn--gray" href="#">Design Yours</a>
+                    <a class="design__btn-second btn btn--green" href="#">Explore Consoles & Accessories</a>
+                </div>  
+            </div>
+            <div class="design__timer timer">
+                <div class="timer__item">
+                    <div class="timer__title"><span>50% discount</span><br/> for your design!</div>
+                    <div class="timer__content">
+                        <div class="timer__timebox">
+                            <div class="timer__time-item" id="days"></div>
+                            <div class="timer__time-text">DAYS</div>
+                        </div>
+                        <div class="timer__timebox">
+                            <div class="timer__time-item" id="hours"></div>
+                            <div class="timer__time-text">HOURS</div>
+                        </div>
+                        <div class="timer__timebox">
+                            <div class="timer__time-item" id="minutes"></div>
+                            <div class="timer__time-text">MINUTES</div>
+                        </div>
+                        <div class="timer__timebox">
+                            <div class="timer__time-item" id="seconds"></div>
+                            <div class="timer__time-text">SECONDS</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+            <section class="exclusive">
+    <div class="exclusive__title">Exclusive games on XBOX</div>
+    <div class="exclusive-swiper">
+        <div class="exclusive-swiper__row">
+            <div class="exclusive-swiper__slide">
+                <div class="exclusive-swiper__item item-swiper">
+                    <div class="item-swiper__image">
+                        <picture><source srcset="img/exclusive/01.webp" type="image/webp"><img src="img/exclusive/01.jpg" alt="" class="item-swiper__img"></picture>
+                    </div>
+                    <div class="item-swiper__body">
+                        <div class="item-swiper__title">Call of Duty: WWII</div>
+                        <div class="item-swiper__text">The C.O.D.E. Bravery Pack is now available in WWII</div>
+                    </div>
+                    <div class="item-swiper__button">
+                        <a href="#" class="item-swiper__btn btn btn--green">See Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="exclusive-swiper__slide">
+                <div class="exclusive-swiper__item item-swiper">
+                    <div class="item-swiper__image">
+                        <picture><source srcset="img/exclusive/02.webp" type="image/webp"><img src="img/exclusive/02.jpg" alt="" class="item-swiper__img"></picture>
+                    </div>
+                    <div class="item-swiper__body">
+                        <div class="item-swiper__title">Destiny 2</div>
+                        <div class="item-swiper__text"></div>
+                    </div>
+                    <div class="item-swiper__button">
+                        <a href="#" class="item-swiper__btn btn btn--green">See Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="exclusive-swiper__slide">
+                <div class="exclusive-swiper__item item-swiper">
+                    <div class="item-swiper__image">
+                        <picture><source srcset="img/exclusive/03.webp" type="image/webp"><img src="img/exclusive/03.jpg" alt="" class="item-swiper__img"></picture>
+                    </div>
+                    <div class="item-swiper__body">
+                        <div class="item-swiper__title">STEEP</div>
+                        <div class="item-swiper__text"></div>
+                    </div>
+                    <div class="item-swiper__button">
+                        <a href="#" class="item-swiper__btn btn btn--green">See Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="exclusive-swiper__slide">
+                <div class="exclusive-swiper__item item-swiper">
+                    <div class="item-swiper__image">
+                        <picture><source srcset="img/exclusive/04.webp" type="image/webp"><img src="img/exclusive/04.jpg" alt="" class="item-swiper__img"></picture>
+                    </div>
+                    <div class="item-swiper__body">
+                        <div class="item-swiper__title">Forza Motorsport 7</div>
+                        <div class="item-swiper__text"></div>
+                    </div>
+                    <div class="item-swiper__button">
+                        <a href="#" class="item-swiper__btn btn btn--green">See Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="exclusive-swiper__slide">
+                <div class="exclusive-swiper__item item-swiper">
+                    <div class="item-swiper__image">
+                        <picture><source srcset="img/exclusive/01.webp" type="image/webp"><img src="img/exclusive/01.jpg" alt="" class="item-swiper__img"></picture>
+                    </div>
+                    <div class="item-swiper__body">
+                        <div class="item-swiper__title">Call of Duty: WWII</div>
+                        <div class="item-swiper__text">The C.O.D.E. Bravery Pack is now available in WWII</div>
+                    </div>
+                    <div class="item-swiper__button">
+                        <a href="#" class="item-swiper__btn btn btn--green">See Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="exclusive-swiper__slide">
+                <div class="exclusive-swiper__item item-swiper">
+                    <div class="item-swiper__image">
+                        <picture><source srcset="img/exclusive/02.webp" type="image/webp"><img src="img/exclusive/02.jpg" alt="" class="item-swiper__img"></picture>
+                    </div>
+                    <div class="item-swiper__body">
+                        <div class="item-swiper__title">Destiny 2</div>
+                        <div class="item-swiper__text"></div>
+                    </div>
+                    <div class="item-swiper__button">
+                        <a href="#" class="item-swiper__btn btn btn--green">See Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="exclusive-swiper__slide">
+                <div class="exclusive-swiper__item item-swiper">
+                    <div class="item-swiper__image">
+                        <picture><source srcset="img/exclusive/03.webp" type="image/webp"><img src="img/exclusive/03.jpg" alt="" class="item-swiper__img"></picture>
+                    </div>
+                    <div class="item-swiper__body">
+                        <div class="item-swiper__title">STEEP</div>
+                        <div class="item-swiper__text"></div>
+                    </div>
+                    <div class="item-swiper__button">
+                        <a href="#" class="item-swiper__btn btn btn--green">See Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="exclusive-swiper__slide">
+                <div class="exclusive-swiper__item item-swiper">
+                    <div class="item-swiper__image">
+                        <picture><source srcset="img/exclusive/04.webp" type="image/webp"><img src="img/exclusive/04.jpg" alt="" class="item-swiper__img"></picture>
+                    </div>
+                    <div class="item-swiper__body">
+                        <div class="item-swiper__title">Forza Motorsport 7</div>
+                        <div class="item-swiper__text"></div>
+                    </div>
+                    <div class="item-swiper__button">
+                        <a href="#" class="item-swiper__btn btn btn--green">See Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="exclusive-swiper__slide">
+                <div class="exclusive-swiper__item item-swiper">
+                    <div class="item-swiper__image">
+                        <picture><source srcset="img/exclusive/02.webp" type="image/webp"><img src="img/exclusive/02.jpg" alt="" class="item-swiper__img"></picture>
+                    </div>
+                    <div class="item-swiper__body">
+                        <div class="item-swiper__title">Destiny 2</div>
+                        <div class="item-swiper__text"></div>
+                    </div>
+                    <div class="item-swiper__button">
+                        <a href="#" class="item-swiper__btn btn btn--green">See Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="exclusive-swiper__slide">
+                <div class="exclusive-swiper__item item-swiper">
+                    <div class="item-swiper__image">
+                        <picture><source srcset="img/exclusive/03.webp" type="image/webp"><img src="img/exclusive/03.jpg" alt="" class="item-swiper__img"></picture>
+                    </div>
+                    <div class="item-swiper__body">
+                        <div class="item-swiper__title">STEEP</div>
+                        <div class="item-swiper__text"></div>
+                    </div>
+                    <div class="item-swiper__button">
+                        <a href="#" class="item-swiper__btn btn btn--green">See Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="exclusive-swiper__slide">
+                <div class="exclusive-swiper__item item-swiper">
+                    <div class="item-swiper__image">
+                        <picture><source srcset="img/exclusive/04.webp" type="image/webp"><img src="img/exclusive/04.jpg" alt="" class="item-swiper__img"></picture>
+                    </div>
+                    <div class="item-swiper__body">
+                        <div class="item-swiper__title">Forza Motorsport 7</div>
+                        <div class="item-swiper__text"></div>
+                    </div>
+                    <div class="item-swiper__button">
+                        <a href="#" class="item-swiper__btn btn btn--green">See Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="exclusive-swiper__button-prev button-nav"><img src="img/icons/arrow-left.svg" alt=""></button>
+        <button class="exclusive-swiper__button-next button-nav"><img src="img/icons/arrow-right.svg" alt=""></button>
+    </div>
+    <a class="exclusive__button btn btn--gray" href="">XBOX Store</a>
+</section>
+            <section class="best">
+    <div class="best__top">
+        <div class="best__logo"><img class="best__logo-img" src="img/icons/xbox.svg" alt="" ></div>
+    <div class="best__title">The best value <br/><span>in games and entertainment</span></div>
+    </div>
+    <div class="container">
+        <div class="best__content">
+            <div class="best__inner">
+                <div class="best__column">
+                    <div class="best__item item-best">
+                        <div class="item-best__image"><picture><source srcset="img/best/01.webp" type="image/webp"><img src="img/best/01.jpg" alt="" class="item-best__img"></picture></div>
+                        <div class="item-best__textbox">
+                            <div class="item-best__title">XBOX ONE X</div>
+                            <div class="item-best__text">Faster Processing Smoother Gameplay</div>
+                        </div>
+                        <div class="item-best__button">
+                            <a class="item-best__btn btn btn--green" href="#">Explore Consoles & Accessories</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="best__column">
+                    <div class="best__item item-best">
+                        <div class="item-best__image"><picture><source srcset="img/best/02.webp" type="image/webp"><img src="img/best/02.jpg" alt="" class="item-best__img"></picture></div> 
+                        <div class="item-best__textbox">
+                            <div class="item-best__title">MIXER Streaming</div>
+                            <div class="item-best__text">The Next Generation Of Life Game Streaming</div>
+                        </div>
+                        <div class="item-best__button">
+                            <a class="item-best__btn btn btn--green" href="#">Start Watching mixer</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="best__column">
+                    <div class="best__item item-best">
+                        <div class="item-best__image"><picture><source srcset="img/best/03.webp" type="image/webp"><img src="img/best/03.jpg" alt="" class="item-best__img"></picture></div>
+                        <div class="item-best__textbox">
+                            <div class="item-best__title">Free Games Every Month</div>
+                            <div class="item-best__text">Get up to $700 in free games</div>
+                        </div>
+                        <div class="item-best__button">
+                            <a class="item-best__btn btn btn--green" href="#">Get Free Games</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        </main>
+        <footer class="footer">
+    <div class="container-2">
+        <div class="footer__content">
+            <div class="footer__row">
+                <div class="footer__item">
+                    <div class="footer__item-xbox xbox-item">
+                        <div class="xbox-item__title footer-title">XBOX</div>
+                        <a class="xbox-item__text" href="#">Support</a>
+                        <a class="xbox-item__text" href="#">Contact us</a>
+                        <a class="xbox-item__text" href="#">Privacy & cookies</a>
+                        <a class="xbox-item__text" href="#">Terms of use</a>
+                    </div>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__item-developers developers-item">
+                        <div class="developers-item__title footer-title">Developers</div>
+                        <a class="developers-item__text" href="#">Games</a>
+                        <a class="developers-item__text" href="#">Windows 10</a>
+                        <a class="developers-item__text" href="#">Creators Program</a>
+                        <a class="developers-item__text" href="#">Designed for XBOX</a>
+                    </div>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__item-social social-item">
+                        <div class="social-item__title footer-title">Follow Us</div>
+                        <a class="social-item__image" href=""><img src="img/icons/facebook.svg" alt=""></a>
+                        <a class="social-item__image" href=""><img src="img/icons/twitter.svg" alt=""></a>
+                        <a class="social-item__image" href=""><img src="img/icons/instagram.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <div class="container-3">
+            <div class="footer__bottom-content">
+                <div class="footer__bottom-text">English (United States)</div>
+                <div class="footer__bottom-text">© Microsoft 2017</div>
+            </div>
+        </div>
+    </div>
+</footer>
+    </div>
+    <script src="js/app.min.js?_v=20230418200400"></script>
+</body>
+</html>

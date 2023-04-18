@@ -1,0 +1,97 @@
+.footer {
+    padding: 58px 0 0 0;
+    background-color: $bgdarkColor;
+
+    @include for-phone {
+        padding: 30px 0 0 0;
+    }
+
+    &__content {
+        padding: 0 0 49px 0;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        @include for-phone {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+    &__item-xbox {
+        font-size: 14px;
+    }
+
+    &__item-developers {
+        font-size: 14px;
+    }
+
+    &__bottom-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        height: 77px;
+
+        border-top: 2px solid #ffffff59;
+    }
+}
+
+.xbox-item {
+
+    @include for-phone {
+        margin-bottom: 30px;
+    }
+
+    &__title {
+        margin: 0 0 34px 0;
+        font-weight: bold;
+    }
+
+    &__text {
+        display: block;
+        margin: 0 0 29px 0;
+        transition: all 0.2s ease 0s;
+
+        &:last-child {
+            margin: 0;
+        }
+
+        &:hover {
+            color: #ffffff80;
+            text-decoration: underline;
+        }
+    }
+}
+
+.developers-item {
+
+    @extend .xbox-item;
+
+    &__title {
+        @extend .xbox-item__title;
+    }
+
+    &__text {
+        @extend .xbox-item__text;
+    }
+}
+
+.social-item {
+
+    &__title {
+        @extend .xbox-item__title;
+    }
+
+    &__image {
+        display: inline-block;
+        margin: 0 15px 0 0;
+    }
+
+}
+

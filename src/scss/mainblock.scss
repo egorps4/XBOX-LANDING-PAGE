@@ -1,0 +1,158 @@
+.mainblock {
+    position: relative;
+    width: 100%;
+    min-height: calc(100vh - 60px);
+  
+    background-color: $bgdarkColor;
+
+    &__slider {
+      display: flex;
+      width: 100%;
+      min-height: calc(100vh - 60px);
+    }
+  
+    &__slider-item {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+  
+      @include for-phone {
+        justify-content: center
+      }
+  
+      width: 100%;
+      min-height: calc(100vh - 60px);
+  
+      position: absolute;
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: cover;
+  
+  
+      visibility: visible; 
+      opacity: 1;
+      transition: opacity 1s ease 0s;
+      
+      &--SW {
+        background-image: url(../img/mainblock/bg.jpg);
+      }
+      
+      &--CoW {
+        background-image: url(../img/mainblock/bg-2.jpg);
+      }
+  
+      &--DE {
+        background-image: url(../img/mainblock/bg-3.jpg);
+      }
+  
+      &.hidden {
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 1s ease 0s;
+      }
+    }
+  
+    &__slider-content {
+      position: relative;
+      z-index: 1;
+      
+      width: max-content;
+      padding-right: 20vw;
+  
+      @include for-phone {
+        padding: 0;
+      }
+    }
+  
+    &__slider-title {
+      font-size: 24px;
+      line-height: 28px;
+      
+      margin: 0 0 15vh 0;
+  
+      span {
+        font-size: 36px;
+      }
+    }
+  
+    &__buttons {
+      @include for-phone {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+  
+    &__btn-watch {
+      width: 136px;
+      min-height: 38px;
+  
+      margin: 0 13px 0 0;
+  
+      @include for-phone {
+        margin: 0 auto 10px ;
+      }
+    }
+  
+    &__btn-explore {
+      width: 148px;
+      min-height: 38px;
+      
+      margin: 0 auto;
+  
+      @include for-phone {
+        margin: 0 auto;
+      }
+    }
+  
+    &__button-left {
+      position: absolute;
+      z-index: 1;
+      top: 50%;
+      left: 0;
+  
+      padding: 10px;
+      margin-top: -20px;
+    }
+  
+    &__button-right {
+      position: absolute;
+      z-index: 1;
+      top: 50%;
+      right: 0;
+  
+      padding: 10px;
+      margin-top: -20px;
+    }
+  
+    &__tabs {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+  
+      display: flex;    
+  
+      margin-left: -25px;
+      padding: 10px 0;
+    }
+  
+    &__tabs-item {
+      cursor: pointer;
+  
+      width: 10px;
+      height: 10px;
+  
+      margin: 0 10px 0 0;
+  
+      border: 1px solid $greenColor;
+      border-radius: 50%;
+  
+      &:last-child {
+        margin: 0;
+      }
+  
+      &.active {
+        background-color: $greenColor;
+      }
+    }
+  }
